@@ -1,5 +1,6 @@
 # Lights Out
 ![Title screen](https://github.com/AnotherUser269/JavaConsoleGames/blob/main/LightsOutGame/src/main/resources/Screenshot_2.png?raw=true)
+
 Lights Out is a simple math puzzle. To guarantee a solution, use the Gaussian elimination method (solver included).
 
 # Contents:
@@ -25,10 +26,12 @@ This will compile and run the program to solve a specific field of the game.
 # Customization:
 
 Change constants in src/main/java/game/GameConfig.java to customize board size, initial state, etc.
+
 ![Constants](https://github.com/AnotherUser269/JavaConsoleGames/blob/main/LightsOutGame/src/main/resources/Screenshot_3.png?raw=true)
 
 # How to play:
-Just follow the instructions on the screen to play the LightsOut puzzle.
+Just follow the instructions on the screen. If you want to learn more about the original game or the winning strategy, check out:
+https://en.wikipedia.org/wiki/Lights_Out_(game)
 
 ![Game](https://github.com/AnotherUser269/JavaConsoleGames/blob/main/LightsOutGame/src/main/resources/Screenshot_1.png?raw=true)
 
