@@ -7,7 +7,13 @@ Right now, this repository consists of:
 1. LightsOut - a console implementation of the "Lights Out" puzzle game with a solver (an algorithm based on linear algebra).
 
 # How to start playing:
-To get more information about compiling procedure and game rules, go to the specified project folder and read README there.
+1. Clone this repository
+ 
+```shell
+git clone https://github.com/AnotherUser269/JavaConsoleGames/
+```
+
+2. To get more information about the compiling procedure, go to the specified project folder and read its README file.
 
 # Requirements:
 1. Java 17+
