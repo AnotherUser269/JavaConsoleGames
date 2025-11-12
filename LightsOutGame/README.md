@@ -1,5 +1,5 @@
 # Lights Out
-![Title screen](https://github.com/AnotherUser269/JavaConsoleGames/blob/main/LightsOutGame/src/main/resources/Screenshot_2.png?raw=true)
+![Title screen](https://raw.githubusercontent.com/AnotherUser269/JavaConsoleGames/refs/heads/main/LightsOutGame/src/main/resources/Screenshot_2.png)
 
 Lights Out is a simple math puzzle. To guarantee a solution, use the Gaussian elimination method (solver included).
 
@@ -27,14 +27,14 @@ This will compile and run the program to solve a specific field of the game.
 
 Change constants in src/main/java/game/GameConfig.java to customize board size, initial state, etc.
 
-![Constants](https://github.com/AnotherUser269/JavaConsoleGames/blob/main/LightsOutGame/src/main/resources/Screenshot_3.png?raw=true)
+![Constants](https://raw.githubusercontent.com/AnotherUser269/JavaConsoleGames/refs/heads/main/LightsOutGame/src/main/resources/Screenshot_3.png)
 
 # How to play:
 Just follow the instructions on the screen. If you want to learn more about the original game or the winning strategy, check out:
 https://en.wikipedia.org/wiki/Lights_Out_(game)
 
-![Game](https://github.com/AnotherUser269/JavaConsoleGames/blob/main/LightsOutGame/src/main/resources/Screenshot_1.png?raw=true)
+![Game](https://raw.githubusercontent.com/AnotherUser269/JavaConsoleGames/refs/heads/main/LightsOutGame/src/main/resources/Screenshot_1.png)
 
 In order to use Solver, go to the MatrixConfig.java and provide your own input.
 
-![Solver](https://github.com/AnotherUser269/JavaConsoleGames/blob/main/LightsOutGame/src/main/resources/Screenshot_4.png?raw=true)
+![Solver](https://raw.githubusercontent.com/AnotherUser269/JavaConsoleGames/refs/heads/main/LightsOutGame/src/main/resources/Screenshot_4.png)
