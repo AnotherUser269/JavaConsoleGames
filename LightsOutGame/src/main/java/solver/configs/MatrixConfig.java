@@ -1,4 +1,4 @@
-package solver.configuration;
+package solver.configs;
 
 public record MatrixConfig() {
     public static int[][] originalConfiguration = {

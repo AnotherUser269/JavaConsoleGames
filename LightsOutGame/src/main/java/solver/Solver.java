@@ -1,6 +1,6 @@
 package solver;
 
-import solver.configuration.MatrixConfig;
+import solver.configs.MatrixConfig;
 import solver.status.SystemStatus;
 import solver.utils.MatrixManager;
 

@@ -1,6 +1,6 @@
 package solver.utils;
 
-import solver.configuration.MatrixConfig;
+import solver.configs.MatrixConfig;
 
 import java.util.ArrayList;
 import java.util.List;

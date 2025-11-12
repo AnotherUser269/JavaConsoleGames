@@ -9,8 +9,8 @@ public record GameConfig() {
 
     // Board
     public static final int OUTLINE_WIDTH = 1;
-    public static final int BOARD_HEIGHT = 30;
-    public static final int BOARD_WIDTH = 30;
+    public static final int BOARD_HEIGHT = 5;
+    public static final int BOARD_WIDTH = 5;
     public static final char OUTLINE_CHAR = '\u2591';
     public static final boolean IS_RANDOMIZED = true;
 
