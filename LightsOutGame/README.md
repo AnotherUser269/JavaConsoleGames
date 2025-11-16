@@ -1,5 +1,7 @@
 # Lights Out
-![Title screen](https://raw.githubusercontent.com/AnotherUser269/JavaConsoleGames/refs/heads/main/LightsOutGame/src/main/resources/Screenshot_2.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AnotherUser269/JavaConsoleGames/refs/heads/main/LightsOutGame/src/main/resources/Screenshot_2.png" />
+</p>
 
 Lights Out is a simple math puzzle. To guarantee a solution, use the Gaussian elimination method (solver included).
 
@@ -25,16 +27,28 @@ This will compile and run the program to solve a specific field of the game.
 
 # Customization:
 
-Change constants in src/main/java/game/GameConfig.java to customize board size, initial state, etc.
+Change constants in src/main/java/game/configs/GameConfig.java to customize board size, delimiter char, etc.
 
-![Constants](https://raw.githubusercontent.com/AnotherUser269/JavaConsoleGames/refs/heads/main/LightsOutGame/src/main/resources/Screenshot_3.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AnotherUser269/JavaConsoleGames/refs/heads/main/LightsOutGame/src/main/resources/Screenshot_3.png" />
+</p>
+
+To change solver, provide your own initial state in src/main/java/solver/configs/MatrixConfig.java
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AnotherUser269/JavaConsoleGames/refs/heads/main/LightsOutGame/src/main/resources/Screenshot_5.png" />
+</p>
 
 # How to play:
 Just follow the instructions on the screen. If you want to learn more about the original game or the winning strategy, check out:
 https://en.wikipedia.org/wiki/Lights_Out_(game)
 
-![Game](https://raw.githubusercontent.com/AnotherUser269/JavaConsoleGames/refs/heads/main/LightsOutGame/src/main/resources/Screenshot_1.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AnotherUser269/JavaConsoleGames/refs/heads/main/LightsOutGame/src/main/resources/Screenshot_1.png" />
+</p>
 
-In order to use Solver, go to the MatrixConfig.java and provide your own input.
+A solver program will show you where to click.
 
-![Solver](https://raw.githubusercontent.com/AnotherUser269/JavaConsoleGames/refs/heads/main/LightsOutGame/src/main/resources/Screenshot_4.png)
+<p align="center">
+  <img src="https://raw.githubusercontent.com/AnotherUser269/JavaConsoleGames/refs/heads/main/LightsOutGame/src/main/resources/Screenshot_4.png" />
+</p>
