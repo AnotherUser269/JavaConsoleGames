@@ -59,7 +59,7 @@ public class ScreenManager {
 
     public void showEndScreen(int moves) {
         System.out.println("* Congrats! You won.");
-        System.out.printf("* You spend %d moves.\n", moves);
+        System.out.printf("* You spent %d moves.\n", moves);
     }
 
     public void clearScreen() {
