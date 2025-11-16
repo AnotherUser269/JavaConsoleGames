@@ -20,5 +20,12 @@ git clone https://github.com/AnotherUser269/JavaConsoleGames/
 1. Java 17+
 2. Console / terminal
 
+# ℹ️ Important:
+1) For proper display, it is recommended to use a monospaced font (e.g. Courier New) in the console configuration. If the text appears distorted or misaligned, try adjusting the font size.
+
+2) If after changing the font, random symbols appear instead of text, try changing the configuration file settings.
+
+3) If the console does not clear properly, change "RIS" (full clear) in the configuration file to "PRINTLN" (one empty line between screens) or "CURSOR_HOME_CLEAR" (clear with cursor return to the start).
+
 # 📝 License:
 MIT
