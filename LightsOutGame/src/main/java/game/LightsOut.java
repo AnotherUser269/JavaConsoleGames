@@ -1,7 +1,7 @@
 package game;
 
 import game.components.Board;
-import game.game_enums.GameState;
+import game.enums.GameState;
 import game.utils.ScreenManager;
 import game.utils.InputParser;
 import game.configs.GameConfig;
@@ -13,7 +13,7 @@ public class LightsOut {
                 GameConfig.BOARD_HEIGHT,
                 GameConfig.BOARD_WIDTH,
                 GameConfig.OUTLINE_CHAR,
-                GameConfig.IS_RANDOMIZED
+                GameConfig.GAME_TYPE
         );
 
         InputParser inputParser = new InputParser(

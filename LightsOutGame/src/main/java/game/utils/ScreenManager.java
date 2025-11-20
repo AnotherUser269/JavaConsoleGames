@@ -1,7 +1,8 @@
 package game.utils;
 
 import game.configs.GameConfig;
-import game.game_enums.ClearType;
+import game.enums.ClearType;
+import game.enums.GameType;
 
 public class ScreenManager {
     private static final String LOGO =
@@ -31,7 +32,7 @@ public class ScreenManager {
             [Game Config]:
             * Width: %d,
             * Height: %d,
-            * Randomized: %b""";
+            * Type: %s""";
 
     public void showStartScreen() {
         // Logo
@@ -50,10 +51,19 @@ public class ScreenManager {
         System.out.println();
 
         // Config section
+        int height, width;
+
+        if (GameConfig.GAME_TYPE == GameType.CUSTOM) {
+            height = GameConfig.CUSTOM_BOARD.length;
+            width = GameConfig.CUSTOM_BOARD[0].length;
+        } else {
+            height = GameConfig.BOARD_HEIGHT;
+            width = GameConfig.BOARD_WIDTH;
+        }
+
         System.out.printf(GAME_CONFIG,
-                GameConfig.BOARD_WIDTH,
-                GameConfig.BOARD_HEIGHT,
-                GameConfig.IS_RANDOMIZED);
+                width, height,
+                GameConfig.GAME_TYPE);
         System.out.println("\n");
     }
 

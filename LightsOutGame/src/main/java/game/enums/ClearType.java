@@ -1,4 +1,4 @@
-package game.game_enums;
+package game.enums;
 
 public enum ClearType {
     RIS, PRINTLN, CURSOR_HOME_CLEAR

@@ -1,4 +1,4 @@
-package game.game_enums;
+package game.enums;
 
 public enum GameState {
     WON, CONTINUED

@@ -1,6 +1,8 @@
 package game.components;
 
-import game.game_enums.GameState;
+import game.configs.GameConfig;
+import game.enums.GameState;
+import game.enums.GameType;
 
 import java.util.Random;
 
@@ -19,8 +21,13 @@ public class Board {
             int boardHeight,
             int boardWidth,
             char outlineSymbol,
-            boolean isRandomized
+            GameType gameType
     ) {
+        if (gameType == GameType.CUSTOM) {
+            boardHeight = GameConfig.CUSTOM_BOARD.length;
+            boardWidth = GameConfig.CUSTOM_BOARD[0].length;
+        }
+
         if (outlineWidth <= 0) {
             throw new IllegalArgumentException("outlineWidth must be > 0");
         } else if (!(boardWidth > 0 && boardWidth <= 36)) {
@@ -30,25 +37,54 @@ public class Board {
         } else {
             this.outlineWidth = outlineWidth;
             this.outlineSymbol = outlineSymbol;
+
             this.boardWidth = boardWidth;
             this.boardHeight = boardHeight;
 
-            this.board = generateBoard(isRandomized);
-            if (isRandomized) randomize();
+            if (gameType == GameType.ALL_ONES) {
+                this.board = generateBoard(false);
+            } else if (gameType == GameType.RANDOMIZED) {
+                this.board = generateBoard(true);
+                randomize();
+            } else {
+                this.board = generateBoardFromTemplate();
+            }
         }
     }
 
-    private Tile[][] generateBoard(boolean isRandomized) {
-        // Generates and returns a fully unsolved board, where every lamp is on.
+    private Tile[][] generateBoard(boolean startAllOff) {
+        // startAllOff — if true, all tiles start off; otherwise all on
         Tile[][] board = new Tile[boardHeight][boardWidth];
 
         for (int y = 0; y < boardHeight; ++y) {
             for (int x = 0; x < boardWidth; ++x) {
-                if (isRandomized) {
+                if (startAllOff) {
                     board[y][x] = new Tile(false);
                 } else {
                     board[y][x] = new Tile(true);
                 }
+            }
+        }
+
+        return board;
+    }
+
+    private Tile[][] generateBoardFromTemplate() {
+        // Generates and returns a custom board
+        int[][] template = GameConfig.CUSTOM_BOARD;
+
+        Tile[][] board = new Tile[boardHeight][boardWidth];
+
+        Tile newTile;
+        for (int y = 0; y < boardHeight; ++y) {
+            for (int x = 0; x < boardWidth; ++x) {
+                if (template[y][x] == 0) {
+                    newTile = new Tile(false);
+                } else {
+                    newTile = new Tile(true);
+                }
+
+                board[y][x] = newTile;
             }
         }
 
